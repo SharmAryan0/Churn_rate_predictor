@@ -1,0 +1,51 @@
+{
+    "target_column": "Exited",
+    "raw_feature_columns": [
+        "CreditScore",
+        "Geography",
+        "Gender",
+        "Age",
+        "Tenure",
+        "Balance",
+        "NumOfProducts",
+        "HasCrCard",
+        "IsActiveMember",
+        "EstimatedSalary"
+    ],
+    "numeric_features": [
+        "CreditScore",
+        "Age",
+        "Tenure",
+        "Balance",
+        "NumOfProducts",
+        "HasCrCard",
+        "IsActiveMember",
+        "EstimatedSalary"
+    ],
+    "categorical_features": [
+        "Geography",
+        "Gender"
+    ],
+    "processed_feature_names": [
+        "numeric__CreditScore",
+        "numeric__Age",
+        "numeric__Tenure",
+        "numeric__Balance",
+        "numeric__NumOfProducts",
+        "numeric__HasCrCard",
+        "numeric__IsActiveMember",
+        "numeric__EstimatedSalary",
+        "categorical__Geography_France",
+        "categorical__Geography_Germany",
+        "categorical__Geography_Spain",
+        "categorical__Gender_Female",
+        "categorical__Gender_Male"
+    ],
+    "decision_threshold": 0.5,
+    "risk_thresholds": {
+        "low_max": 0.3,
+        "medium_max": 0.6
+    },
+    "random_seed": 42,
+    "model_type": "TensorFlow/Keras ANN"
+}
